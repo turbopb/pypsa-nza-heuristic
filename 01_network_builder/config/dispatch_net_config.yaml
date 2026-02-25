@@ -1,0 +1,35 @@
+# ============================================================================
+# Dispatch Network Builder Configuration
+# ============================================================================
+# 
+
+paths:
+  root: "C:/Users/Public/Documents/Thesis/analysis/dispatch_network_builder"
+  dirpath_static: "data/static/"
+  dirpath_demand: "C:/Users/Public/Documents/Thesis/analysis/dispatch_data/data/processed/2024/demand/d_MW"
+  dirpath_renewables_wind: "C:/Users/Public/Documents/Thesis/analysis/PYPSA-NZA/models/capacity_expansion/renewables/wind/wind_p_pu_monthly/2024"
+  dirpath_renewables_solar: "C:/Users/Public/Documents/Thesis/analysis/PYPSA-NZA/models/capacity_expansion/renewables/solar/solar_profiles/2024"
+  dirpath_costs: "C:/Users/Public/Documents/Thesis/analysis/PYPSA-NZA/data/costs/"
+  dirpath_networks: "networks/"
+
+filename:
+  bus_data: "busses.csv"
+  line_data: "lines_data_dispatch.csv"
+  link_data: "links_data_dispatch.csv"
+  gen_data: "gen_data.csv"
+  costs_file: "nz_energy_tech_costs_2023_nzd.yaml"
+  wind_pu: "wind_p_pu_202407.csv"
+  solar_dir: "jul"
+
+# Date range
+start_date: '2024-07-01 00:00:00'
+end_date: '2024-07-31 23:30:00'
+frequency: '30min'
+base_year: 2024
+
+# Fixed line ratings for dispatch validation
+line_ratings:
+  uniform_s_nom: 600.0  # MVA - conservative approximation for all AC lines
+  hvdc_p_nom: 1200.0    # MW - actual Benmore-Haywards rating
+
+demand_file_suffix: "_d_MW.csv"
