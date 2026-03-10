@@ -1,0 +1,131 @@
+# additions_2030_iter01.yaml
+#
+# First iteration capacity additions for 2030 planning year.
+#
+# Strategy:
+#   - Add gas generation at existing gas bus locations (dispatchable, firm capacity)
+#   - Upgrade HVDC Cook Strait link (critical North-South interconnector)
+#   - Upgrade key North Island transmission corridors
+#
+# Basis:
+#   - All 12 months inadequate, worst months (May, Aug, Jun, Jul) show
+#     70-85 buses shedding — system-wide generation shortage
+#   - All lines at 100% loading — transmission also binding throughout
+#   - Nov/Dec closest to adequate (0.15-0.16%) — use as calibration check
+#
+# Run with:
+#   python 02_scenarios\03_apply_additions_manual.py --year 2030
+#         --additions 02_scenarios\additions\additions_2030_iter01.yaml
+#         --iteration 1
+#
+# After running, review results and create additions_2030_iter02.yaml
+# if further additions are needed.
+
+year: 2030
+notes: "Iter 1 — add gas generation at existing gas buses, upgrade HVDC and key lines"
+
+generators:
+
+  # --- North Island gas additions ---
+  # Adding at existing gas bus locations which already have grid connections
+  # and are the logical sites for peaking capacity
+
+  - name: OTA_gas_01
+    bus: OTA
+    p_nom: 400           # MW — Auckland area, largest load centre
+    carrier: gas
+    marginal_cost: 80    # $/MWh
+
+  - name: HLY_gas_01
+    bus: HLY
+    p_nom: 400           # MW — Huntly, existing large gas/coal plant site
+    carrier: gas
+    marginal_cost: 80
+
+  - name: HWA_gas_01
+    bus: HWA
+    p_nom: 200           # MW — Hawera
+    carrier: gas
+    marginal_cost: 85
+
+  - name: SFD_gas_01
+    bus: SFD
+    p_nom: 200           # MW — Stratford
+    carrier: gas
+    marginal_cost: 85
+
+  - name: TAB_gas_01
+    bus: TAB
+    p_nom: 200           # MW — Taranaki region
+    carrier: gas
+    marginal_cost: 85
+
+  - name: MKE_gas_01
+    bus: MKE
+    p_nom: 150           # MW
+    carrier: gas
+    marginal_cost: 90
+
+  - name: JRD_gas_01
+    bus: JRD
+    p_nom: 100           # MW
+    carrier: gas
+    marginal_cost: 90
+
+lines:
+
+  # --- HVDC Cook Strait link upgrade ---
+  # The single link in the network is the Cook Strait HVDC cable.
+  # Current rating appears to be 600 MVA. Real capacity is ~1200 MW.
+  # Upgrading via lines is not correct for the HVDC link —
+  # see note below. Line upgrades here are AC transmission only.
+
+  # --- Key North Island 220 kV corridors ---
+  # These are the most heavily loaded corridors based on network topology.
+  # Adding 600 MVA (second circuit equivalent) to each.
+
+  - name: HAY_BPE_upgrade       # Haywards - Bunnythorpe (key Wellington-Palmerston North)
+    existing_line: N-L2
+    add_s_nom: 600
+
+  - name: BPE_TNG_upgrade       # Bunnythorpe - Takapu (central North Island)
+    existing_line: N-L8
+    add_s_nom: 600
+
+  - name: TNG_TKU_upgrade       # Takapu - Tokaanu
+    existing_line: N-L10
+    add_s_nom: 600
+
+  - name: WKM_MTI_upgrade       # Wairakei - Maraetai (geothermal export corridor)
+    existing_line: N-L38
+    add_s_nom: 600
+
+  - name: HLY_BOB_upgrade       # Huntly - Bombay (Auckland supply)
+    existing_line: N-L40
+    add_s_nom: 600
+
+  - name: BOB_OTA_upgrade       # Bombay - Otahuhu (Auckland supply)
+    existing_line: N-L42
+    add_s_nom: 600
+
+  - name: WVY_HWA_upgrade       # Waverly - Hawera (Taranaki)
+    existing_line: N-L81
+    add_s_nom: 600
+
+  - name: HWA_SFD_upgrade       # Hawera - Stratford
+    existing_line: N-L82
+    add_s_nom: 600
+
+  # --- Key South Island corridors ---
+
+  - name: MAN_NMA_upgrade       # Manapouri - Twizel (South Island main)
+    existing_line: S-L1
+    add_s_nom: 600
+
+  - name: BEN_AVI_upgrade       # Benmore - Aviemore
+    existing_line: S-L29
+    add_s_nom: 600
+
+  - name: OHA_OHB_upgrade       # Ohau A - Ohau B
+    existing_line: S-L32
+    add_s_nom: 600

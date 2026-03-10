@@ -1,0 +1,246 @@
+
+=== MAY ===
+Shedding buses:
+  load_shed_ROS: 1481.4 MWh
+  load_shed_TAB: 910.1 MWh
+  load_shed_CBG: 908.7 MWh
+  load_shed_TAK: 867.5 MWh
+  load_shed_KPO: 802.0 MWh
+  load_shed_TRK: 799.2 MWh
+  load_shed_LFD: 727.5 MWh
+  load_shed_MST: 718.5 MWh
+  load_shed_WGN: 709.5 MWh
+  load_shed_TKU: 663.0 MWh
+  load_shed_MHO: 661.8 MWh
+  load_shed_WPA: 559.5 MWh
+  load_shed_ONG: 551.7 MWh
+  load_shed_MGM: 527.6 MWh
+  load_shed_TMI: 503.4 MWh
+  load_shed_MTR: 488.8 MWh
+  load_shed_HAM: 470.4 MWh
+  load_shed_SFD: 466.9 MWh
+  load_shed_MTI: 461.8 MWh
+  load_shed_HEN: 460.3 MWh
+  load_shed_OHK: 449.7 MWh
+  load_shed_MNG: 448.5 MWh
+  load_shed_PRM: 416.0 MWh
+  load_shed_BOB: 407.4 MWh
+  load_shed_LTN: 396.7 MWh
+  load_shed_NPK: 388.0 MWh
+  load_shed_OKN: 386.1 MWh
+  load_shed_TUI: 380.7 MWh
+  load_shed_MNI: 365.3 MWh
+  load_shed_JRD: 313.0 MWh
+  load_shed_KAW: 286.2 MWh
+  load_shed_RDF: 285.8 MWh
+  load_shed_TWH: 272.0 MWh
+  load_shed_MTN: 266.1 MWh
+  load_shed_PEN: 264.1 MWh
+  load_shed_KMO: 261.4 MWh
+  load_shed_MTO: 258.1 MWh
+  load_shed_TMN: 237.6 MWh
+  load_shed_GYT: 218.1 MWh
+  load_shed_WEL: 203.8 MWh
+  load_shed_TWC: 203.4 MWh
+  load_shed_TGA: 195.7 MWh
+  load_shed_WRK: 187.5 MWh
+  load_shed_OWH: 179.1 MWh
+  load_shed_HAY: 177.3 MWh
+  load_shed_PPI: 174.9 MWh
+  load_shed_WIL: 171.2 MWh
+  load_shed_GLN: 166.7 MWh
+  load_shed_WPW: 161.2 MWh
+  load_shed_UHT: 161.2 MWh
+  load_shed_KPA: 154.1 MWh
+  load_shed_MKE: 143.2 MWh
+  load_shed_DVK: 126.0 MWh
+  load_shed_MPE: 112.5 MWh
+  load_shed_FHL: 107.7 MWh
+  load_shed_ATI: 88.1 MWh
+  load_shed_ROT: 46.9 MWh
+  load_shed_ARI: 42.6 MWh
+  load_shed_HEP: 39.7 MWh
+  load_shed_KOE: 19.5 MWh
+  load_shed_KIN: 6.2 MWh
+Top congested lines (bus0->bus1, s_nom):
+  S-L17     ROX->NSY  s_nom=600 MVA  loading=1.000
+  N-L39     MTI->WPA  s_nom=600 MVA  loading=1.000
+  N-L79     MTN->WGN  s_nom=600 MVA  loading=1.000
+  S-L15     ROX->CYD  s_nom=600 MVA  loading=0.999
+  N-L71     BPE->MTN  s_nom=600 MVA  loading=0.975
+  N-L48     PEN->HOB  s_nom=600 MVA  loading=0.959
+
+=== JUN ===
+Shedding buses:
+  load_shed_TMN: 1040.6 MWh
+  load_shed_HUI: 737.8 MWh
+  load_shed_HEP: 637.5 MWh
+  load_shed_TAB: 622.0 MWh
+  load_shed_KPA: 613.6 MWh
+  load_shed_BRK: 556.1 MWh
+  load_shed_MGM: 541.1 MWh
+  load_shed_WWD: 459.3 MWh
+  load_shed_PPI: 452.6 MWh
+  load_shed_HEN: 425.5 MWh
+  load_shed_NAP: 419.9 MWh
+  load_shed_CST: 400.9 MWh
+  load_shed_MHO: 394.5 MWh
+  load_shed_CBG: 376.0 MWh
+  load_shed_UHT: 364.5 MWh
+  load_shed_MTO: 341.2 MWh
+  load_shed_TRK: 325.0 MWh
+  load_shed_OKN: 289.0 MWh
+  load_shed_WKM: 287.1 MWh
+  load_shed_WPA: 283.6 MWh
+  load_shed_MPE: 280.2 MWh
+  load_shed_RPO: 267.7 MWh
+  load_shed_ATI: 254.2 MWh
+  load_shed_JRD: 246.2 MWh
+  load_shed_HAY: 227.2 MWh
+  load_shed_HWA: 218.6 MWh
+  load_shed_TAK: 203.4 MWh
+  load_shed_ARI: 179.6 MWh
+  load_shed_OTA: 179.3 MWh
+  load_shed_GLN: 172.1 MWh
+  load_shed_MTI: 162.6 MWh
+  load_shed_HAM: 133.5 MWh
+  load_shed_TUI: 131.3 MWh
+  load_shed_ROT: 128.4 MWh
+  load_shed_TGA: 111.1 MWh
+  load_shed_KPO: 110.9 MWh
+  load_shed_GYT: 100.9 MWh
+  load_shed_KOE: 98.6 MWh
+  load_shed_EDG: 78.2 MWh
+  load_shed_WDV: 56.6 MWh
+  load_shed_HRP: 55.9 MWh
+  load_shed_TWC: 51.9 MWh
+  load_shed_WEL: 49.2 MWh
+  load_shed_PEN: 36.6 MWh
+  load_shed_ARA: 10.1 MWh
+Top congested lines (bus0->bus1, s_nom):
+  S-L17     ROX->NSY  s_nom=600 MVA  loading=0.998
+  N-L28     SFD->TMN  s_nom=600 MVA  loading=0.977
+  N-L18     WRK->NAP  s_nom=600 MVA  loading=0.972
+  S-L15     ROX->CYD  s_nom=600 MVA  loading=0.970
+  N-L6      BPE->BRK  s_nom=600 MVA  loading=0.958
+
+=== JUL ===
+Shedding buses:
+  load_shed_DVK: 463.9 MWh
+  load_shed_GLN: 348.2 MWh
+  load_shed_EDG: 312.2 MWh
+  load_shed_MGM: 302.4 MWh
+  load_shed_MST: 245.8 MWh
+  load_shed_PPI: 214.9 MWh
+  load_shed_TGA: 209.9 MWh
+  load_shed_HLY: 193.2 MWh
+  load_shed_MHO: 176.8 MWh
+  load_shed_BOB: 174.8 MWh
+  load_shed_ARA: 165.8 MWh
+  load_shed_KAW: 165.0 MWh
+  load_shed_PAK: 162.5 MWh
+  load_shed_PRM: 140.5 MWh
+  load_shed_FHL: 121.9 MWh
+  load_shed_TAB: 116.6 MWh
+  load_shed_BRK: 90.9 MWh
+  load_shed_HAM: 72.4 MWh
+  load_shed_OHK: 44.1 MWh
+  load_shed_WKM: 42.0 MWh
+  load_shed_WIL: 39.0 MWh
+  load_shed_ROT: 23.8 MWh
+Top congested lines (bus0->bus1, s_nom):
+  N-L123    WIR->OTA  s_nom=600 MVA  loading=1.000
+  S-L68     TKB->NWD  s_nom=1000 MVA  loading=0.996
+  S-L69     NWD->ISL  s_nom=1000 MVA  loading=0.984
+
+=== AUG ===
+Shedding buses:
+  load_shed_BOB: 1602.0 MWh
+  load_shed_WEL: 1587.5 MWh
+  load_shed_EDG: 1545.8 MWh
+  load_shed_MPE: 1295.0 MWh
+  load_shed_RDF: 1067.2 MWh
+  load_shed_TKR: 1059.5 MWh
+  load_shed_WPW: 1051.1 MWh
+  load_shed_KPO: 1000.4 MWh
+  load_shed_HEP: 966.4 MWh
+  load_shed_WRK: 942.5 MWh
+  load_shed_TMN: 896.2 MWh
+  load_shed_OHK: 845.0 MWh
+  load_shed_MGM: 808.1 MWh
+  load_shed_KAW: 762.9 MWh
+  load_shed_MTI: 756.1 MWh
+  load_shed_CBG: 730.1 MWh
+  load_shed_GLN: 711.5 MWh
+  load_shed_OTA: 695.2 MWh
+  load_shed_HAM: 692.7 MWh
+  load_shed_ATI: 684.2 MWh
+  load_shed_WGN: 665.7 MWh
+  load_shed_HTI: 653.3 MWh
+  load_shed_KMO: 645.3 MWh
+  load_shed_MHO: 621.8 MWh
+  load_shed_MTO: 616.4 MWh
+  load_shed_TKU: 609.3 MWh
+  load_shed_ONG: 586.1 MWh
+  load_shed_FHL: 576.7 MWh
+  load_shed_MTR: 574.4 MWh
+  load_shed_TWH: 574.3 MWh
+  load_shed_GYT: 568.9 MWh
+  load_shed_KIN: 559.9 MWh
+  load_shed_ROS: 536.7 MWh
+  load_shed_WKM: 531.6 MWh
+  load_shed_WHI: 529.3 MWh
+  load_shed_LTN: 495.4 MWh
+  load_shed_TAB: 494.0 MWh
+  load_shed_TUI: 460.6 MWh
+  load_shed_OKN: 409.8 MWh
+  load_shed_WPA: 378.4 MWh
+  load_shed_UHT: 367.6 MWh
+  load_shed_TWC: 356.5 MWh
+  load_shed_THI: 350.7 MWh
+  load_shed_LFD: 343.1 MWh
+  load_shed_BRK: 318.2 MWh
+  load_shed_JRD: 315.8 MWh
+  load_shed_RPO: 311.3 MWh
+  load_shed_HLY: 307.3 MWh
+  load_shed_NPK: 293.0 MWh
+  load_shed_ARA: 290.2 MWh
+  load_shed_NAP: 273.1 MWh
+  load_shed_HAY: 263.6 MWh
+  load_shed_MNI: 253.7 MWh
+  load_shed_TAK: 251.1 MWh
+  load_shed_WWD: 235.8 MWh
+  load_shed_PAK: 196.8 MWh
+  load_shed_MAT: 194.2 MWh
+  load_shed_KPA: 163.0 MWh
+  load_shed_WIL: 151.0 MWh
+  load_shed_TMI: 132.8 MWh
+  load_shed_TGA: 66.5 MWh
+  load_shed_OWH: 49.1 MWh
+  load_shed_HUI: 36.6 MWh
+  load_shed_KOE: 35.6 MWh
+  load_shed_HWA: 20.6 MWh
+  load_shed_PPI: 11.2 MWh
+Top congested lines (bus0->bus1, s_nom):
+  N-L25     OHK->ATI  s_nom=600 MVA  loading=1.000
+  N-L30     TWH->HLY  s_nom=600 MVA  loading=1.000
+  N-L79     MTN->WGN  s_nom=600 MVA  loading=1.000
+  N-L113    CBG->HAM  s_nom=600 MVA  loading=1.000
+  N-L71     BPE->MTN  s_nom=600 MVA  loading=0.975
+  N-L123    WIR->OTA  s_nom=600 MVA  loading=0.968
+
+=== SEP ===
+Shedding buses:
+  load_shed_ROS: 884.1 MWh
+  load_shed_WPW: 742.6 MWh
+  load_shed_TAK: 722.9 MWh
+  load_shed_FHL: 565.9 MWh
+  load_shed_PRM: 499.0 MWh
+  load_shed_PAK: 311.5 MWh
+  load_shed_HEN: 254.9 MWh
+  load_shed_HAM: 127.8 MWh
+  load_shed_KIN: 91.9 MWh
+  load_shed_MTR: 72.9 MWh
+  load_shed_TUI: 71.4 MWh
+  load_shed_MHO: 32.7 MWh
+Top congested lines (bus0->bus1, s_nom):

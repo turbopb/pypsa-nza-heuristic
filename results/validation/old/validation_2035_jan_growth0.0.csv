@@ -1,0 +1,2 @@
+scaling_factor,growth_percent,total_load_shed_MWh,buses_with_shedding,shedding_by_bus,total_demand_MWh,load_shed_fraction,total_generation_MWh,max_line_loading,congested_lines,lines_at_limit,max_link_loading,congested_links,generators_at_capacity,status,solve_time_s
+1.0,0.0,0.0,0,{},9563212.101202266,0.0,9596497.566455994,1.0,5,"{'N-L20': 1.0, 'N-L27': 1.0, 'N-L28': 0.9779546597714261, 'N-L82': 1.0, 'N-L122': 1.0}",1.0,1,70,ADEQUATE,27.07664394378662

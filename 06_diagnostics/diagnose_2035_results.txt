@@ -1,0 +1,18 @@
+
+=== MAY ===
+Shedding buses:
+  load_shed_GLN: 55.6 MWh
+  load_shed_BOB: 47.1 MWh
+  load_shed_HEN: 22.2 MWh
+Top congested lines (bus0->bus1, s_nom):
+  N-L121    HLY->BOB  s_nom=600 MVA  loading=1.000
+  S-L17     ROX->NSY  s_nom=600 MVA  loading=0.976
+  N-L122    BOB->WIR  s_nom=600 MVA  loading=0.955
+
+=== SEP ===
+Shedding buses:
+  load_shed_GLN: 200.2 MWh
+  load_shed_BOB: 79.4 MWh
+Top congested lines (bus0->bus1, s_nom):
+  N-L121    HLY->BOB  s_nom=600 MVA  loading=1.000
+  N-L122    BOB->WIR  s_nom=600 MVA  loading=0.990

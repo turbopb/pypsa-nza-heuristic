@@ -1,0 +1,2 @@
+scaling_factor,growth_percent,status,total_demand_MWh,load_shed_MWh,load_shed_fraction,buses_with_shedding,max_line_loading,congested_lines,generators_at_capacity,solve_time_s
+1.1381638940234133,13.816389402341333,INADEQUATE,9953017.054809328,593247.2504509444,0.0596047657895136,86,1.0,54,57,26.127588510513306

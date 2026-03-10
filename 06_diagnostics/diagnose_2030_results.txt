@@ -1,0 +1,84 @@
+
+=== JAN ===
+Shedding buses:
+  load_shed_TWI: 80852.4 MWh
+Top congested lines:
+name
+S-L2      1.000000
+S-L3      1.000000
+S-L33     1.000000
+N-L41     1.000000
+N-L120    1.000000
+S-L19     0.968419
+
+=== FEB ===
+Shedding buses:
+  load_shed_TWI: 83271.3 MWh
+Top congested lines:
+name
+S-L2      1.000000
+S-L3      1.000000
+S-L33     1.000000
+N-L41     1.000000
+N-L120    1.000000
+S-L19     0.952817
+
+=== MAR ===
+Shedding buses:
+  load_shed_TWI: 69997.9 MWh
+Top congested lines:
+name
+S-L2      1.000000
+S-L3      1.000000
+S-L33     1.000000
+N-L41     1.000000
+N-L120    1.000000
+S-L19     0.977107
+
+=== MAY ===
+Shedding buses:
+  load_shed_TWI: 76624.9 MWh
+  load_shed_TAK: 135.8 MWh
+Top congested lines:
+name
+S-L2      1.0
+S-L3      1.0
+S-L19     1.0
+S-L33     1.0
+N-L41     1.0
+N-L120    1.0
+
+=== JUN ===
+Shedding buses:
+  load_shed_TWI: 36527.8 MWh
+Top congested lines:
+name
+S-L2      1.000000
+S-L3      1.000000
+S-L33     1.000000
+N-L41     1.000000
+N-L120    1.000000
+S-L19     0.981395
+
+=== AUG ===
+Shedding buses:
+  load_shed_TAK: 78.2 MWh
+Top congested lines:
+name
+S-L2      1.000000
+S-L33     1.000000
+N-L120    1.000000
+N-L41     1.000000
+S-L19     0.976531
+S-L3      0.951926
+
+=== SEP ===
+Shedding buses:
+  load_shed_TAK: 223.3 MWh
+Top congested lines:
+name
+S-L2      1.000000
+S-L33     1.000000
+N-L41     1.000000
+N-L120    1.000000
+N-L121    0.966799

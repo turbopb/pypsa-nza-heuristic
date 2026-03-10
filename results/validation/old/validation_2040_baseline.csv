@@ -1,0 +1,2 @@
+scenario,load_shed_fraction,load_shed_GWh,total_demand_GWh,overloaded_lines,critical_lines,mean_loading_pct,max_loading_pct
+2040_baseline,0.0,0.0,10588.97136208207,5,2,31.50108088872173,100.0

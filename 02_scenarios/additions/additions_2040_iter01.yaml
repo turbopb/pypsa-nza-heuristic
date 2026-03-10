@@ -1,0 +1,106 @@
+# additions_2040_iter01.yaml
+#
+# Status after setup: 7/12 adequate
+# Inadequate: MAY, JUN, JUL, AUG (MIXED), SEP (GENERATION)
+#
+# Diagnosis summary:
+#   MAY/AUG: whole-NI generation shortage + N-L79 MTN->WGN, N-L71 BPE->MTN at 100%
+#   JUN:     generation shortage + N-L28 SFD->TMN, N-L18 WRK->NAP, N-L6 BPE->BRK at ~97%
+#   JUL:     N-L123 WIR->OTA at 100%, S-L68/S-L69 near 100% (SI HVDC corridor)
+#   AUG:     N-L25 OHK->ATI, N-L30 TWH->HLY, N-L113 CBG->HAM all at 100%
+#   SEP:     generation shortage (congested lines data unavailable -- recheck if still inadequate)
+#
+# Strategy: add substantial firm generation at strategic NI buses,
+#           upgrade all recurring transmission bottlenecks.
+
+year: 2040
+notes: "Iter 1 -- generation additions + upgrade recurring NI transmission bottlenecks"
+
+generators:
+
+  - name: HLY_gas_03
+    bus: HLY
+    p_nom: 300
+    carrier: gas
+    marginal_cost: 80
+
+  - name: OTA_gas_03
+    bus: OTA
+    p_nom: 300
+    carrier: gas
+    marginal_cost: 80
+
+  - name: HAY_gas_01
+    bus: HAY
+    p_nom: 200
+    carrier: gas
+    marginal_cost: 82
+
+  - name: WRK_gas_01
+    bus: WRK
+    p_nom: 200
+    carrier: gas
+    marginal_cost: 82
+
+  - name: SFD_gas_02
+    bus: SFD
+    p_nom: 200
+    carrier: gas
+    marginal_cost: 82
+
+  - name: TWH_gas_02
+    bus: TWH
+    p_nom: 150
+    carrier: gas
+    marginal_cost: 85
+
+lines:
+
+  # Wellington corridor -- MAY and AUG
+  - name: N-L79_upgrade      # MTN->WGN at 100% in MAY, AUG
+    existing_line: N-L79
+    add_s_nom: 600
+
+  - name: N-L71_upgrade      # BPE->MTN at 97% in MAY, AUG
+    existing_line: N-L71
+    add_s_nom: 600
+
+  # Auckland feed -- JUL and AUG
+  - name: N-L123_upgrade     # WIR->OTA at 100% in JUL, AUG
+    existing_line: N-L123
+    add_s_nom: 600
+
+  # South Island Roxburgh area -- MAY and JUN
+  - name: S-L17_upgrade      # ROX->NSY at 100% in MAY, JUN
+    existing_line: S-L17
+    add_s_nom: 600
+
+  - name: S-L15_upgrade      # ROX->CYD at 100% in MAY, JUN
+    existing_line: S-L15
+    add_s_nom: 600
+
+  # AUG-specific bottlenecks
+  - name: N-L25_upgrade      # OHK->ATI at 100% in AUG
+    existing_line: N-L25
+    add_s_nom: 600
+
+  - name: N-L30_upgrade      # TWH->HLY at 100% in AUG
+    existing_line: N-L30
+    add_s_nom: 600
+
+  - name: N-L113_upgrade     # CBG->HAM at 100% in AUG
+    existing_line: N-L113
+    add_s_nom: 600
+
+  # JUN-specific bottlenecks
+  - name: N-L28_upgrade      # SFD->TMN at 97% in JUN
+    existing_line: N-L28
+    add_s_nom: 600
+
+  - name: N-L18_upgrade      # WRK->NAP at 97% in JUN
+    existing_line: N-L18
+    add_s_nom: 600
+
+  - name: N-L6_upgrade       # BPE->BRK at 96% in JUN
+    existing_line: N-L6
+    add_s_nom: 600

@@ -1,0 +1,25 @@
+# additions_2035_iter01.yaml
+#
+# Status after setup: 10/12 adequate
+# Inadequate: MAY (0.0013%), SEP (0.0034%) -- both MIXED
+#
+# Diagnosis:
+#   Both months: N-L121 HLY->BOB at 100% (binding), N-L122 BOB->WIR near 100%
+#   Shedding at GLN and BOB (downstream of bottleneck), HEN (downstream of WIR)
+#
+# Fix: upgrade N-L121 and N-L122. No new generation needed.
+
+year: 2035
+notes: "Iter 1 -- upgrade HLY->BOB and BOB->WIR to fix MAY and SEP isolation"
+
+generators: []
+
+lines:
+
+  - name: N-L121_upgrade     # HLY->BOB: binding constraint both months
+    existing_line: N-L121
+    add_s_nom: 600
+
+  - name: N-L122_upgrade     # BOB->WIR: congested in SEP, near limit in MAY
+    existing_line: N-L122
+    add_s_nom: 600

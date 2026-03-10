@@ -1,0 +1,113 @@
+# additions_2030_iter02.yaml
+#
+# Second iteration capacity additions for 2030 planning year.
+#
+# Status after iter01: 5/12 adequate
+# Remaining inadequate: JAN, FEB, MAR, MAY, JUN, AUG, SEP
+# All remaining months: 1-2 buses shedding, 6-10 congested lines
+#
+# Strategy:
+#   - Upgrade the most heavily overloaded transmission lines
+#     (ranked by loading factor from post-iter01 diagnostic)
+#   - Add modest additional generation for MAY/JUN which still have
+#     29 generators at capacity
+#
+# Note: iter02 adds ON TOP of iter01 (iter01 additions are already
+# written into the network CSV files).
+#
+# Run with:
+#   python 02_scenarios\03_apply_additions_manual.py --year 2030
+#         --additions 02_scenarios\additions\additions_2030_iter02.yaml
+#         --iteration 2
+
+year: 2030
+notes: "Iter 2 — upgrade most overloaded transmission lines, add generation for May/Jun"
+
+generators:
+
+  # MAY and JUN still have 29 generators at capacity — add more firm generation
+  - name: HLY_gas_02
+    bus: HLY
+    p_nom: 200
+    carrier: gas
+    marginal_cost: 80
+
+  - name: OTA_gas_02
+    bus: OTA
+    p_nom: 200
+    carrier: gas
+    marginal_cost: 80
+
+  - name: GLN_gas_01
+    bus: GLN
+    p_nom: 150
+    carrier: gas
+    marginal_cost: 85
+
+  - name: TWH_gas_01
+    bus: TWH
+    p_nom: 100
+    carrier: gas
+    marginal_cost: 90
+
+lines:
+
+  # Most heavily overloaded lines from post-iter01 diagnostic
+  # Adding 1200 MVA (two additional circuits) to the worst offenders
+  # and 600 MVA (one additional circuit) to the moderate ones
+
+  - name: WRK_TAB_upgrade        # N-L12: 3.56x overloaded
+    existing_line: N-L12
+    add_s_nom: 1200
+
+  - name: WIL_TKR_upgrade        # N-L1: 3.27x — Wellington corridor
+    existing_line: N-L1
+    add_s_nom: 1200
+
+  - name: HRP_TAB_upgrade        # N-L14: 3.27x
+    existing_line: N-L14
+    add_s_nom: 1200
+
+  - name: TKR_HAY_upgrade        # N-L57: 3.16x — Takapu-Haywards
+    existing_line: N-L57
+    add_s_nom: 1200
+
+  - name: WDV_BPE_upgrade        # N-L69: 2.51x
+    existing_line: N-L69
+    add_s_nom: 1200
+
+  - name: TWC_BPE_upgrade        # N-L5: 2.44x
+    existing_line: N-L5
+    add_s_nom: 1200
+
+  - name: HAY_PRM_upgrade        # N-L61: 2.24x
+    existing_line: N-L61
+    add_s_nom: 600
+
+  - name: WWD_WIL_upgrade        # N-L55: 1.86x
+    existing_line: N-L55
+    add_s_nom: 600
+
+  - name: RDF_WHI_upgrade        # N-L15: 1.85x
+    existing_line: N-L15
+    add_s_nom: 600
+
+  - name: WRK_OHK_upgrade        # N-L24: 1.78x
+    existing_line: N-L24
+    add_s_nom: 600
+
+  - name: WKM_THI_upgrade        # N-L22: 1.76x — geothermal export
+    existing_line: N-L22
+    add_s_nom: 600
+
+  - name: AVI_WTK_upgrade        # S-L28: 1.64x — South Island main
+    existing_line: S-L28
+    add_s_nom: 600
+
+  - name: OHC_BEN_upgrade        # S-L30: 1.26x
+    existing_line: S-L30
+    add_s_nom: 600
+
+  - name: TKB_TWZ_upgrade        # S-L67: South Island
+    existing_line: S-L67
+    add_s_nom: 600

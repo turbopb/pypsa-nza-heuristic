@@ -1,0 +1,46 @@
+# additions_2030_iter03.yaml
+#
+# Status after iter02: 5/12 adequate
+# Remaining: JAN, FEB, MAR, MAY, JUN, AUG, SEP
+#
+# Diagnosis (from proper fix_all_capacities diagnostic):
+#
+#   TWI isolated (JAN/FEB/MAR/MAY/JUN): S-L3 INV->TWI at 100%, S-L2 NMA->INV at 100%
+#   TAK isolated (MAY/AUG/SEP):         N-L41 BOB->TAK at 100%
+#   Secondary congestion:               N-L120 HAM->HLY, S-L33 OHA->TWZ, S-L19 WTK->NSY
+#
+# Strategy: upgrade the two isolating lines first, then the secondary congestion.
+
+year: 2030
+notes: "Iter 3 -- fix TWI and TAK isolation, upgrade secondary congested lines"
+
+generators: []
+
+lines:
+
+  # --- TWI isolation fix ---
+  - name: S-L3_upgrade       # INV->TWI: the binding constraint isolating Tiwai
+    existing_line: S-L3
+    add_s_nom: 600
+
+  - name: S-L2_upgrade       # NMA->INV: upstream of TWI, also at 100%
+    existing_line: S-L2
+    add_s_nom: 600
+
+  # --- TAK isolation fix ---
+  - name: N-L41_upgrade      # BOB->TAK: only feed to Takanini, at 100%
+    existing_line: N-L41
+    add_s_nom: 600
+
+  # --- Secondary congestion ---
+  - name: N-L120_upgrade     # HAM->HLY: limits Waikato generation export
+    existing_line: N-L120
+    add_s_nom: 600
+
+  - name: S-L33_upgrade      # OHA->TWZ: South Island congestion
+    existing_line: S-L33
+    add_s_nom: 600
+
+  - name: S-L19_upgrade      # WTK->NSY: near-congested in most months
+    existing_line: S-L19
+    add_s_nom: 600
